@@ -20,14 +20,14 @@ public class app {
         sortersList.add(bubbleSorter);
         sortersList.add(quickSorter);
 
-        for (Sorter sorter: sortersList) {
+        for (Sorter sorter : sortersList) {
             sorter.sort(ints);
             System.out.println(Arrays.toString(ints));
         }
-    }
-}
+
+
         Searcher binarySearcher = new BinarySearcher();
-        int randomIndex =new Random().nextInt(ints.length);
+        int randomIndex = new Random().nextInt(ints.length);
 
         binarySearcher.search(ints, ints[randomIndex]);
     }
