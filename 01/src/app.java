@@ -2,11 +2,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import Models.SelectionSorter;
-//import Models.QuickSorter;
-import Models.BubbleSorter;
-import Models.Sorter;
+import java.util.Random;
 
+import Models.*;
 
 public class app {
     public static void main(String[] args) {
@@ -26,5 +24,11 @@ public class app {
             sorter.sort(ints);
             System.out.println(Arrays.toString(ints));
         }
+    }
+}
+        Searcher binarySearcher = new BinarySearcher();
+        int randomIndex =new Random().nextInt(ints.length);
+
+        binarySearcher.search(ints, ints[randomIndex]);
     }
 }
