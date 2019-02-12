@@ -31,3 +31,4 @@ public class app {
         binarySearcher.search(ints, ints[randomIndex]);
     }
 }
+
